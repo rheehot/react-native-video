@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {StyleSheet, requireNativeComponent, NativeModules, View, ViewPropTypes, Image, Platform, findNodeHandle} from 'react-native';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 
 export { TextTrackType, FilterType };
 
-export default class Video extends Component {
+export default class Video extends PureComponent {
 
   constructor(props) {
     super(props);
